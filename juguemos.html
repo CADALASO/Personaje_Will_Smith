@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="es-Es">
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://kit.fontawesome.com/65f13727ae.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" type="text/css" href="css/estilos.css">
-        <link rel="stylesheet" type="text/css" href="css/normalize.css">
-        <link type="image/x-icon" href="img/icono.png" rel="icon">
-        <title>WILL SMITH</title>
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/65f13727ae.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/styleform.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link type="image/x-icon" href="img/icono.png" rel="icon">
+    <title>WILL SMITH</title>
+</head>
 
 <body class="container-grid5">
     <header>
@@ -23,45 +23,47 @@
         <a href="familia.html">Familia</a>
         <a href="juguemos.html">Juguemos</a>
     </nav>
-    <section id="biography">
+    <section>
         <h2>Revisemos lo aprendido</h2>
-        <p class="extra">Deja incialmente algunos datos sobre ti</p>
+        <p>Deja incialmente algunos datos sobre ti</p>
         <div class="form">
-            <p>
+            <div class="form-group">
                 <label for="nombre">Ingrese su nombre</label>
                 <input name="nombre" id="nombre" type="text" placeholder="Ingresar Nombre" maxlength="50"
                     autocomplete="on" required>
-            </p>
-            <p>
+            </div>
+            <div class="form-group">
                 <label for="Edad">Ingrese su Edad</label>
                 <input name="Edad" id="Edad" type="number" placeholder="Ingresar Edad" step="1">
-            </p>
-        </div>
-        <p class="extra">ahora si, vamos a ver que tanto recuerdas</p>
-        <div class="form">
-            <p>
-                <label for="familia">Seleciona los hijos de Will Smith</label>
-                <div class="item1">
-                <input name="familia" id="familia" type="checkbox">Jada
-                <input name="familia" id="familia" type="checkbox">Trey
-                <input name="familia" id="familia" type="checkbox">Willow
-                <input name="familia" id="familia" type="checkbox">Jaden
             </div>
-            </p>
-            <p>
-                <label for="date">Ingrese la fecha de nacimiento de Will Smith: </label>
-                <input name="date" id="date" type="date" min="1950-01-01" max="2022-01-01">
-            </p>
-            <p>
-                <label for="peliculas">¿Cuál de estas no es una película de Will? </label>
-                <div class="item1">
-                <input name="peliculas" id="peliculas" type="radio" checked class="item9">Men In Black 3
-                <input name="peliculas" id="peliculas" type="radio">La Verdad Duele
-                <input name="peliculas" id="peliculas" type="radio">life
-                <input name=" peliculas" id="peliculas" type="radio">Géminis
+        </div>
+        <p>ahora si, vamos a ver que tanto recuerdas</p>
+        <div class="form">
+            <div class="form-group">
+                <label for="familia">Seleciona los hijos de Will Smith</label>
+                <div>
+                    <input name="familia" id="familia" type="checkbox"> Jada
+                    <input name="familia" id="familia" type="checkbox"> Trey
+                    <input name="familia" id="familia" type="checkbox"> Willow
+                    <input name="familia" id="familia" type="checkbox"> Jaden
                 </div>
-            </p>
-            <p>
+            </div>
+            <div class="form-group">
+                <label for="date">Ingrese la fecha de nacimiento de Will Smith: </label>
+                <div class="center">
+                <input name="date" id="date" type="date" min="1950-01-01" max="2022-01-01">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="peliculas">¿Cuál de estas no es una película de Will? </label>
+                <div>
+                    <input name="peliculas" id="peliculas" type="radio" checked class="item9"> Men In Black 3
+                    <input name="peliculas" id="peliculas" type="radio"> La Verdad Duele
+                    <input name="peliculas" id="peliculas" type="radio"> life
+                    <input name=" peliculas" id="peliculas" type="radio"> Géminis
+                </div>
+            </div>
+            <div class="form-group">
                 <label for="Ciudad1">¿En qué ciudad nació Will Smith?</label>
                 <select name="Ciudad1" id="Cidad1">
                     <option valor="0">Elige una ciudad</option>
@@ -70,18 +72,18 @@
                     <option valor="3">Filadelfia</option>
                     <option valor="4">Los Ángeles</option>
                 </select>
-            </p>
-            <p class="full-width">
-            <label for="dcurioso">¿Que dato curioso te llamó la atención? </label>
-            <textarea name="file" rows="5" cols="30"></textarea>
-        </p>
-        <p>
-            <label for="email">Ingrese su Correo Electrónico para enviar las respuestas</label>
-            <input name="email" id="email" type="email">
-        </p>
-            <div class="extra">
+            </div>
+            <div class="form-group">
+                <label for="dcurioso">¿Que dato curioso te llamó la atención? </label>
+                <textarea name="file" rows="5" cols="30"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="email">Ingrese su Correo Electrónico para enviar las respuestas</label>
+                <input name="email" id="email" type="email">
+            </div>
+            <div class="form-button">
+                <button type="submit">Guardar</button> 
                 <button type="submit">enviar</button>
-                <button type="submit">Guardar</button>
             </div>
         </div>
     </section>
