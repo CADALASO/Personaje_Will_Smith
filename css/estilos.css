@@ -243,60 +243,6 @@ table td {
     border-radius: 50%;
 }
 
-/*estilos jugemos*/
-
-.container-grid5{
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 7% 15% auto;
-    grid-template-areas:
-    "header"
-    "navbar"
-    "section";
-}
-
-.extra{
-    text-align: center;
-}
-
-.form{
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-    padding-bottom: 10px;
-}
-
-.form p {
-    margin: 1em;
-    text-align: left;
-}
-
-input, option, select,textarea, button{
-    font-family: 'Poppins', sans-serif;
-    width: 100%;
-    border: 1px solid var(--dark-color);
-    padding: 5px;
-}
-
-button {
-background: var(--gray-color);
-width: 25%;
-border: 0;
-margin-left: 50px;
-}
-button:hover, button:focus {
-background: var(--purple-color);
-outline: 0;
-}
-
-.item1{
-    display: grid;
-    grid-template-columns: repeat(8,1fr);
-}
-
-
 /*Resolución tabletas*/
 
 @media screen and (min-width:768px) {
@@ -353,10 +299,6 @@ nav{
     grid-template-rows: 10% 22% auto;
 }
 
-.container-grid5{
-    grid-template-rows: 8% 18% auto;
-}
-
 .tabla p{
     font-size: 16px;
 }
@@ -365,19 +307,7 @@ nav{
     font-size: 16px;
 }
 
-.extra{
-    font-size: 20px;
 }
-
-.form p {
-    font-size: 18px;
-}
-
-button {
-    width: 15%;
-    }
-}
-
 /*Resoluciones medias*/
 
 @media screen and (min-width:1024px) {
@@ -445,22 +375,13 @@ button {
         grid-template-rows: 9% 5.5% auto;
     }
 
-    .container-grid5{
-        grid-template-rows: 8% 5% auto;
-    }
-
-    button {
-        width: 12%;
-        }
 }
-
 /*Resoluciones macro*/
 
 @media screen and (min-width:1200px) {
 
-    .container-grid, .container-grid2, .container-grid3, .container-grid4, .container-grid5{
+    .container-grid, .container-grid2, .container-grid3, .container-grid4 {
         max-width: 1024px;
         margin: 0 auto;
     }
-
 }
